@@ -1,0 +1,8 @@
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\ResumeWebsite.exe
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\dotnet-tools.json
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\ResumeWebsite.dll
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\ResumeWebsite.deps.json
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\ResumeWebsite.runtimeconfig.json
+D:\ResumeWebsite\ResumeWebsite\ResumeWebsite\obj\Release\net8.0\PubTmp\Out\ResumeWebsite.pdb

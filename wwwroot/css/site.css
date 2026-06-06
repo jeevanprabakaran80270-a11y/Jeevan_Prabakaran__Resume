@@ -1,0 +1,357 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    color: #fff;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero-section {
+    padding: 40px 20px;
+}
+
+.hero-card {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 70px;
+    border-radius: 35px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 25px 60px rgba(0,0,0,.45), inset 0 1px rgba(255,255,255,.15);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hello-text {
+    color: #00e5ff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: clamp(45px,7vw,75px);
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.hero-content h3 {
+    color: #facc15;
+    font-size: 30px;
+}
+
+.hero-description {
+    color: #d6d6d6;
+    line-height: 1.9;
+    max-width: 650px;
+    margin-top: 25px;
+}
+
+.highlight {
+    background: linear-gradient(90deg,#00e5ff,#7c3aed,#ff4ecd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #00e5ff;
+    box-shadow: 0 0 25px #00e5ff, 0 0 50px rgba(0,229,255,.4), 0 0 90px rgba(124,58,237,.3);
+    transition: .4s;
+}
+
+    .profile-image:hover {
+        transform: scale(1.05);
+    }
+
+/* ===========================
+   SECTION
+=========================== */
+
+.section-card {
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,.1);
+}
+
+.big-title {
+    text-align: center;
+    font-size: clamp(35px,5vw,55px);
+    margin-bottom: 50px;
+    font-weight: 800;
+    background: linear-gradient(90deg,#00e5ff,#ff4ecd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.custom-card,
+.skill-card {
+    background: linear-gradient(145deg,#1e293b,#111827);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,.08);
+    color: white;
+    transition: .35s;
+}
+
+    .custom-card:hover,
+    .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,229,255,.2);
+    }
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg,#06b6d4,#7c3aed);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .4s;
+}
+
+    .stat-box:hover {
+        transform: scale(1.05);
+    }
+
+    .stat-box h3 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skill-badge {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#00e5ff,#7c3aed);
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+    .skill-badge:hover {
+        transform: scale(1.08);
+    }
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-box {
+    background: linear-gradient(135deg,#00e5ff,#7c3aed,#ff4ecd);
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+}
+
+    .contact-box h4 {
+        font-weight: 600;
+        margin: 20px 0;
+    }
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    background: rgba(10,10,20,.9) !important;
+    backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+    color: #00e5ff !important;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    transition: .3s;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: #00e5ff !important;
+    }
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-warning {
+    background: linear-gradient(90deg,#00e5ff,#7c3aed);
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 14px 40px;
+    transition: .3s;
+}
+
+    .btn-warning:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,229,255,.35);
+    }
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    padding: 30px;
+    color: #bbb;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px) {
+
+    .hero-card {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 45px;
+    }
+
+    .hero-description {
+        margin: auto;
+    }
+
+    .section-card {
+        padding: 40px;
+    }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    .hero-card {
+        padding: 30px 20px;
+        gap: 35px;
+    }
+
+    .profile-image {
+        max-width: 250px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-card {
+        margin: 20px 12px;
+        padding: 25px;
+    }
+
+    .contact-box {
+        padding: 30px 20px;
+    }
+}
+
+/* ===========================
+   EXTRA SMALL DEVICES
+=========================== */
+
+@media (max-width:480px) {
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h3 {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .btn-warning {
+        width: 100%;
+    }
+}
+
+/* ===========================
+   LARGE SCREENS (4K)
+=========================== */
+
+@media (min-width:1600px) {
+
+    .hero-card,
+    .section-card {
+        max-width: 1600px;
+    }
+}
+
+.contact-box h4 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.6;
+}
