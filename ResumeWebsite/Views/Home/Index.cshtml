@@ -3,8 +3,8 @@
 @{
     ViewData["Title"] = "Portfolio";
 }
+<!-- ================= HERO SECTION ================= -->
 
-<!-- HOME -->
 <section class="hero-section">
 
     <div class="hero-card">
@@ -12,30 +12,30 @@
         <div class="hero-content">
 
             <span class="hello-text">
-                HI THERE!
+                HELLO, I'M
             </span>
 
             <h1>
-                I'M <span class="highlight">@Model.Name</span>
+                <span class="highlight">@Model.Name</span>
             </h1>
 
-            <h4 class="mb-4">
+            <h3 class="mb-4">
                 @Model.Title
-            </h4>
+            </h3>
 
-            <p>
+            <p class="hero-description">
                 @Model.Summary
             </p>
 
-            <a href="#contact" class="btn btn-warning btn-lg mt-3">
-                CONTACT ME
+            <a href="#contact" class="btn btn-warning btn-lg mt-4 px-5">
+                Contact Me
             </a>
 
         </div>
 
         <div class="hero-image">
 
-            <img src="~/images/profile.jpeg"
+            <img src="~/images/profile.png"
                  alt="Profile"
                  class="profile-image" />
 
@@ -45,30 +45,36 @@
 
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
+
 <section id="about" class="section-card">
 
     <h2 class="big-title">
-        ABOUT ME
+        About Me
     </h2>
 
-    <div class="row">
+    <div class="row align-items-center">
 
-        <div class="col-md-8">
+        <div class="col-lg-8">
 
-            <h4>
-                I'm @Model.Name
-            </h4>
+            <h3 class="mb-4">
+                Software Developer
+            </h3>
 
             <p>
-                Passionate Software Developer with experience in
-                ASP.NET, .NET Core, SQL Server, APIs,
-                Android and iOS application development.
+                Passionate Software Developer with experience in ASP.NET,
+                .NET Core, SQL Server, REST APIs, Android and iOS application
+                development. Strong knowledge of C#, Entity Framework,
+                HTML, CSS, JavaScript and Bootstrap.
+
+                I enjoy building scalable applications, solving complex
+                problems and creating user-friendly digital solutions while
+                continuously learning modern technologies.
             </p>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4">
 
             <div class="stats-grid">
 
@@ -78,7 +84,7 @@
                 </div>
 
                 <div class="stat-box">
-                    <h3>10+</h3>
+                    <h3>5+</h3>
                     <span>Projects</span>
                 </div>
 
@@ -89,7 +95,7 @@
 
                 <div class="stat-box">
                     <h3>100%</h3>
-                    <span>Commitment</span>
+                    <span>Dedication</span>
                 </div>
 
             </div>
@@ -100,26 +106,61 @@
 
 </section>
 
-<!-- RESUME -->
+<!-- ================= RESUME ================= -->
+
 <section id="resume" class="section-card">
 
     <h2 class="big-title">
-        RESUME
+        Resume
     </h2>
 
-    <div class="row">
+    <div class="row g-4">
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
 
-            <div class="card shadow">
+            <div class="card custom-card h-100">
 
-                <div class="card-body">
+                <div class="card-body p-4">
 
-                    <h4>Education</h4>
+                    <h3 class="mb-4">
+                        🎓 Education
+                    </h3>
+
+                    <h5>
+                        Bachelor of Technology
+                    </h5>
+
+                    <h6 class="text-warning">
+                        Information Technology
+                    </h6>
+
+                    <p>
+                        Anna University,
+                        Tiruchirappalli,
+                        Tamil Nadu
+                    </p>
+
+                    <p>
+                        Successfully completed Bachelor of Technology
+                        in Information Technology.
+                    </p>
+
+                    <span class="badge bg-warning text-dark p-2">
+                        CGPA : 7.2 / 10
+                    </span>
+
+                    <hr />
 
                     <ul>
-                        <li>10th - @Model.Education10th</li>
-                        <li>12th - @Model.Education12th</li>
+
+                        <li>
+                            10th - @Model.Education10th
+                        </li>
+
+                        <li>
+                            12th - @Model.Education12th
+                        </li>
+
                     </ul>
 
                 </div>
@@ -128,19 +169,48 @@
 
         </div>
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
 
-            <div class="card shadow">
+            <div class="card custom-card h-100">
 
-                <div class="card-body">
+                <div class="card-body p-4">
 
-                    <h4>Experience</h4>
-
-                    <p>@Model.Experience</p>
+                    <h3 class="mb-4">
+                        💼 Experience
+                    </h3>
 
                     <p>
-                        Developed enterprise web applications,
-                        APIs and mobile applications using Microsoft technologies.
+                        @Model.Experience
+                    </p>
+
+                    <p>
+
+                        • ASP.NET MVC Development
+
+                    </p>
+
+                    <p>
+
+                        • .NET Core Web API
+
+                    </p>
+
+                    <p>
+
+                        • SQL Server Database Design
+
+                    </p>
+
+                    <p>
+
+                        • Android & iOS Application Development
+
+                    </p>
+
+                    <p>
+
+                        • Bug Fixing & Performance Optimization
+
                     </p>
 
                 </div>
@@ -153,26 +223,31 @@
 
 </section>
 
-<!-- SKILLS -->
+<!-- ================= SKILLS ================= -->
+
 <section id="skills" class="section-card">
 
     <h2 class="big-title">
-        SKILLS
+        Skills
     </h2>
 
-    <div class="row">
+    <div class="row g-4">
 
-        <div class="col-md-6 mb-4">
+        <div class="col-lg-6">
 
             <div class="card skill-card">
 
                 <div class="card-body">
 
-                    <h4>Frameworks</h4>
+                    <h4 class="mb-3">
+                        Frameworks
+                    </h4>
 
                     @foreach (var item in Model.Frameworks)
                     {
-                        <span class="skill-badge">@item</span>
+                        <span class="skill-badge">
+                            @item
+                        </span>
                     }
 
                 </div>
@@ -181,17 +256,21 @@
 
         </div>
 
-        <div class="col-md-6 mb-4">
+        <div class="col-lg-6">
 
             <div class="card skill-card">
 
                 <div class="card-body">
 
-                    <h4>Languages</h4>
+                    <h4 class="mb-3">
+                        Languages
+                    </h4>
 
                     @foreach (var item in Model.Languages)
                     {
-                        <span class="skill-badge">@item</span>
+                        <span class="skill-badge">
+                            @item
+                        </span>
                     }
 
                 </div>
@@ -200,17 +279,21 @@
 
         </div>
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
 
             <div class="card skill-card">
 
                 <div class="card-body">
 
-                    <h4>Database</h4>
+                    <h4 class="mb-3">
+                        Databases
+                    </h4>
 
                     @foreach (var item in Model.Databases)
                     {
-                        <span class="skill-badge">@item</span>
+                        <span class="skill-badge">
+                            @item
+                        </span>
                     }
 
                 </div>
@@ -219,17 +302,21 @@
 
         </div>
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
 
             <div class="card skill-card">
 
                 <div class="card-body">
 
-                    <h4>Platforms</h4>
+                    <h4 class="mb-3">
+                        Platforms
+                    </h4>
 
                     @foreach (var item in Model.Platforms)
                     {
-                        <span class="skill-badge">@item</span>
+                        <span class="skill-badge">
+                            @item
+                        </span>
                     }
 
                 </div>
@@ -242,57 +329,47 @@
 
 </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section-card">
+<!-- ================= CONTACT ================= -->
 
-    <h2 class="big-title">
-        PORTFOLIO
-    </h2>
-
-    <div class="row">
-
-        @foreach (var project in Model.Projects)
-        {
-            <div class="col-md-4 mb-4">
-
-                <div class="card shadow h-100">
-
-                    <div class="card-body">
-
-                        <h4>@project.Name</h4>
-
-                        <p>@project.Description</p>
-
-                        <a href="@project.GithubUrl"
-                           target="_blank"
-                           class="btn btn-warning">
-                            View Project
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-        }
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
 <section id="contact" class="section-card">
 
     <h2 class="big-title">
-        CONTACT
+        Contact Me
     </h2>
 
     <div class="contact-box">
 
-        <h4>📞 @Model.Phone</h4>
+        <h4>
+            📞 @Model.Phone
+        </h4>
 
-        <h4 class="mt-3">✉️ @Model.Email</h4>
+        <h4 class="mt-4">
+            ✉️ @Model.Email
+        </h4>
+
+        <div class="mt-4">
+
+            <a href="#" class="btn btn-dark me-2">
+                LinkedIn
+            </a>
+
+            <a href="#" class="btn btn-dark">
+                GitHub
+            </a>
+
+        </div>
 
     </div>
 
 </section>
+
+<footer class="text-center text-light mb-5">
+
+    <small>
+
+        © @DateTime.Now.Year @Model.Name.
+        All Rights Reserved.
+
+    </small>
+
+</footer>

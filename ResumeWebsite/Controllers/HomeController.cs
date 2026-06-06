@@ -70,6 +70,7 @@ namespace ResumeWebsite.Controllers
                         GithubUrl = "https://github.com/yourusername/banking-app"
                     },
 
+
                     new ProjectModel
                     {
                         Name = "REST API Platform",
